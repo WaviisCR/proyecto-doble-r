@@ -40,4 +40,12 @@
     .home .contacto-bckg .button {
       margin-top: 60vh; }
 
+/*footer*/
+.social-box {
+  width: 2em;
+  height: 2em; }
+  .social-box a {
+    padding: 1%;
+    margin: 1%; }
+
 /*# sourceMappingURL=main.css.map */

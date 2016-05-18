@@ -32,7 +32,7 @@ section#about.container-fluid
 			.col-md-offset-2.col-md-4
 				img(src="images/ingenieria-01.jpg")
 			.col-md-4
-				.box	
+				.box
 					.subtitle
 						h3 INGENIERIA
 					.content
@@ -96,12 +96,13 @@ section#contacto.container-fluid
 	.row
 		+section-title("Contacto")
 	.container
-		.col-md-6
-			form
-				+input("Your name")
-				+input("Your name")
-				+input("Your name")
-		.col-md-6
-			form
+		.col-md-offset-7.col-md-4
+			.form.form-box
+				.form-description
+					p Escribemos para ponernos en contacto contigo, si representas a una empresa, incluye los datos de tu empresa y si eres una persona natural no olvides incluir tu correo electronico
+				form
+				+input("Nombre")
+				+input("Correo")
+				+input("Asunto")
 				+textarea
-	button.btn Send Message
+				button.btn Send Message

@@ -22,6 +22,9 @@ button {
   padding-top: 1.6em;
   padding-bottom: 1.6em; }
 
+.mt-35 {
+  margin-top: 35px; }
+
 /*header*/
 .home {
   width: 100%;
@@ -75,11 +78,15 @@ section #about #proyectos #blog #contacto {
   width: 100%; }
 
 /*footer*/
-.social-box {
-  width: 2em;
-  height: 2em; }
-  .social-box a {
-    padding: 1%;
-    margin: 1%; }
+#footer .social-box {
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-block;
+  margin: 5%;
+  padding: 4%; }
+  #footer .social-box a {
+    text-decoration: none; }
+#footer .rights {
+  padding: 3%; }
 
 /*# sourceMappingURL=main.css.map */

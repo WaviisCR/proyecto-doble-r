@@ -1,0 +1,58 @@
+/*header*/
+.home {
+    width: 100%;
+    position: relative;
+
+    .tira {
+        width: 20%;
+        background-size: contain;
+
+        .button {
+            width: 100%;
+            background-color: blue;
+            
+        }
+        .logo{
+            text-align: center;
+            img{
+                height: 10vh;
+            }
+        }
+    }
+
+    .about-bckg {
+        background-image: url(../../images/textures/about-01-01.png);
+        height: 100vh;
+
+        .button {
+            margin-top: 90vh;
+        }
+    }
+
+    .proyectos-bckg {
+        background-image: url(../../images/textures/portafolio-01-01.png);
+        height: 90vh;
+
+        .button {
+            margin-top: 80vh;
+        }
+    }
+
+    .blog-bckg {
+        background-image: url(../../images/textures/blog-01-01.png);
+        height: 80vh;
+
+        .button {
+            margin-top: 70vh;
+        }
+    }
+
+    .contacto-bckg {
+        background-image: url(../../images/textures/contact-01-01.png);
+        height: 70vh;
+
+        .button {
+            margin-top: 60vh;
+        }
+    }
+}

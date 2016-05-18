@@ -1,44 +1,25 @@
-#about{
-	margin-bottom:10%;
-	h1{
-		background: url("../../images/bg_subt-01.jpg") no-repeat;
-		padding: 4% 2%;
-		font-size: 4em;
-		margin-bottom: 12%;
+.bckg-trama {
+    background: url("../../images/bg_subt-01.jpg") no-repeat;
+}
 
-	}
-	h2{
-		font-size: 2.50em;
-	}
-	img{
-		width: 100%;
-	}
+section #about #proyectos #blog #contacto {
+    margin-bottom: 10%;
+
+    h1 {
+        background: url("../../images/bg_subt-01.jpg") no-repeat;
+        padding: 4% 2%;
+        font-size: 4em;
+        margin-bottom: 12%;
+        margin-right: 5em;
+    }
 }
-#proyectos{
-	
-	margin-bottom:10%;
-	h1{
-		background: url("../../images/bg_subt-01.jpg") no-repeat;
-	    padding: 4% 2%;
-		font-size: 4em;
-		margin-bottom: 12%;
-	}
-}
-#blog{
-	margin-bottom:10%;
-	h1{
-		background: url("../../images/bg_subt-01.jpg") no-repeat;
-		padding: 4% 2%;
-		font-size: 4em;
-		margin-bottom: 12%;
-	}
-}
-#contacto{
-	margin-bottom:10%;
-	h1{
-		background: url("../../images/bg_subt-01.jpg") no-repeat;
-		padding: 4% 2%;
-		font-size: 4em;
-		margin-bottom: 12%;
-	}
+
+#about {
+    h2 {
+        font-size: 2.50em;
+    }
+
+    img {
+        width: 100%;
+    }
 }

@@ -4,7 +4,7 @@ section#about.container-fluid
 	.row
 		.col-md-offset-1.col-md-4
 			.about
-				h2 Nosoros
+				h2 Nosotros
 			.about-description
 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius optio, in mollitia illo earum quibusdam hic, totam sequi. Vitae ut officiis repudiandae facere quaerat modi blanditiis, veritatis fuga dolore sapiente?
 		.col-md-6
@@ -21,20 +21,22 @@ section#about.container-fluid
 		span EL EQUIPO
 		.row
 			.col-md-offset-2.col-md-4
-				.subtitle
-					h3 ARQUITECTURA
-				.content
-					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nesciunt commodi, deserunt mollitia numquam ipsa maxime earum minus quo impedit velit aliquid exercitationem temporibus! Veritatis iusto ipsa eligendi, saepe totam.
+				.box
+					.subtitle
+						h3 ARQUITECTURA
+					.content
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nesciunt commodi, deserunt mollitia numquam ipsa maxime earum minus quo impedit velit aliquid exercitationem temporibus! Veritatis iusto ipsa eligendi, saepe totam.
 			.col-md-4
 				img(src="images/arquitectura-01.jpg")
 		.row
 			.col-md-offset-2.col-md-4
 				img(src="images/ingenieria-01.jpg")
 			.col-md-4
-				.subtitle
-					h3 INGENIERIA
-				.content
-					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, nulla! Assumenda eum ab et animi mollitia cumque id quibusdam, corporis aspernatur expedita voluptas repellat dignissimos impedit quo neque accusantium, temporibus.
+				.box	
+					.subtitle
+						h3 INGENIERIA
+					.content
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, nulla! Assumenda eum ab et animi mollitia cumque id quibusdam, corporis aspernatur expedita voluptas repellat dignissimos impedit quo neque accusantium, temporibus.
 section#proyectos.container-fluid
 	.row
 		+section-title("Proyectos")
@@ -93,3 +95,13 @@ section#blog.container-fluid
 section#contacto.container-fluid
 	.row
 		+section-title("Contacto")
+	.container
+		.col-md-6
+			form
+				+input("Your name")
+				+input("Your name")
+				+input("Your name")
+		.col-md-6
+			form
+				+textarea
+	button.btn Send Message

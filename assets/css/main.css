@@ -1,44 +1,30 @@
-/*HELPERS*/
-.pd-header {
-  padding-left: 2.5em;
-  padding-top: 1.6em;
-  padding-bottom: 1.6em; }
+p { font-family: 'Questrial', sans-serif; }
 
-/*HEADER*/
+h1, h2, h3, h4, h5, h6 { font-family: 'Fjalla One', sans-serif; text-transform: uppercase; font-weight: 700; }
+
+button { font-family: 'Questrial', sans-serif; }
+
+.home { font-family: 'Fjalla One', sans-serif; text-transform: uppercase; font-weight: 700; color: white; }
+
+/*HELPERS*/
+.pd-header { padding-left: 2.5em; padding-top: 1.6em; padding-bottom: 1.6em; }
+
 /*header*/
-.home {
-  width: 100%;
-  position: relative; }
-  .home .tira {
-    width: 20%;
-    background-size: contain; }
-    .home .tira .button {
-      width: 100%;
-      background-color: blue; }
-    .home .tira .logo {
-      text-align: center; }
-      .home .tira .logo img {
-        height: 10vh; }
-  .home .about-bckg {
-    background-image: url(../../images/textures/about-01-01.png);
-    height: 100vh; }
-    .home .about-bckg .button {
-      margin-top: 90vh; }
-  .home .proyectos-bckg {
-    background-image: url(../../images/textures/portafolio-01-01.png);
-    height: 90vh; }
-    .home .proyectos-bckg .button {
-      margin-top: 80vh; }
-  .home .blog-bckg {
-    background-image: url(../../images/textures/blog-01-01.png);
-    height: 80vh; }
-    .home .blog-bckg .button {
-      margin-top: 70vh; }
-  .home .contacto-bckg {
-    background-image: url(../../images/textures/contact-01-01.png);
-    height: 70vh; }
-    .home .contacto-bckg .button {
-      margin-top: 60vh; }
+.home { width: 100%; position: relative; }
+.home .tira { width: 20%; background-size: contain; }
+.home .tira .button { width: 100%; background-color: blue; }
+.home .tira .logo { text-align: center; }
+.home .tira .logo img { height: 10vh; }
+.home .about-bckg { background-image: url(../../images/textures/about-01-01.png); height: 100vh; }
+.home .about-bckg .button { margin-top: 90vh; }
+.home .proyectos-bckg { background-image: url(../../images/textures/portafolio-01-01.png); height: 90vh; }
+.home .proyectos-bckg .button { margin-top: 80vh; }
+.home .blog-bckg { background-image: url(../../images/textures/blog-01-01.png); height: 80vh; }
+.home .blog-bckg .button { margin-top: 70vh; }
+.home .contacto-bckg { background-image: url(../../images/textures/contact-01-01.png); height: 70vh; }
+.home .contacto-bckg .button { margin-top: 60vh; }
+
+#about { background: url("../../images/bg_subt-01.jpg") no-repeat; margin-bottom: 10%; }
 
 /*footer*/
 .social-box {

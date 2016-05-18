@@ -1,9 +1,18 @@
 /*footer*/
-.social-box{
-	width:2em;
-	height:2em;
-	a{
-		padding:1%;
-		margin:1%;
-	}
+#footer {
+    .social-box {
+        width: 2.5em;
+        height: 2.5em;
+        display: inline-block;
+        margin: 5%;
+        padding: 4%;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .rights {
+        padding: 3%;
+    }
 }

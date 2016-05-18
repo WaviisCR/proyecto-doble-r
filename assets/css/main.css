@@ -9,6 +9,9 @@ button { font-family: 'Questrial', sans-serif; }
 /*HELPERS*/
 .pd-header { padding-left: 2.5em; padding-top: 1.6em; padding-bottom: 1.6em; }
 
+.mt-35 {
+  margin-top: 35px; }
+
 /*header*/
 .home { width: 100%; position: relative; }
 .home .tira { width: 20%; background-size: contain; }
@@ -34,7 +37,20 @@ section #about #proyectos #blog #contacto { margin-bottom: 10%; }
 #about img { width: 100%; }
 
 /*footer*/
+<<<<<<< HEAD
 .social-box { width: 2em; height: 2em; }
 .social-box a { padding: 1%; margin: 1%; }
+=======
+#footer .social-box {
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-block;
+  margin: 5%;
+  padding: 4%; }
+  #footer .social-box a {
+    text-decoration: none; }
+#footer .rights {
+  padding: 3%; }
+>>>>>>> f6c3a01ea43dcd5818276e76a1b47b872dff115d
 
 /*# sourceMappingURL=main.css.map */

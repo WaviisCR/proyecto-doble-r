@@ -1,1 +1,7 @@
-/*HEADER*/
+@mixin boton ($cyan, $padding-size, $color, $radius, $none){
+	background-color: $cyan;
+	padding:$padding-size;
+	color:$color;
+	border-radius:$radius;
+	border:$none;
+}

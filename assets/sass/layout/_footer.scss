@@ -1,10 +1,12 @@
 /*footer*/
 #footer {
     .social-box {
-        width: 2.5em;
-        height: 2.5em;
+        color: $gray-blue;
+        width: 1.5em;
+        height: 1.5em;
         display: inline-block;
         margin: 5%;
+        margin-right: 2%;
         padding: 4%;
 
         a {
@@ -14,5 +16,6 @@
 
     .rights {
         padding: 3%;
+        font-family: 'Questrial', sans-serif;
     }
 }

@@ -10,10 +10,10 @@ section#about.container-fluid
 					.about-description
 						p Doble R Estudios nace para deleitar, soñar, imaginar y creer. Nuestro concepto es que todo es posible. Todo lo que quieras hacer lo podemos hacer y lo que hayas soñado lo podemos crear. Doble R estudios nace para demostrar que se puede estar a la vanguardia en la arquitectura con una ingeniería sostenible que la respalde.
 		.col-md-6
-			img(src="images/nosotros_1.jpg")
+			img(src="images/nosotros_1.jpg").resize
 	.row
 		.col-md-offset-1.col-md-6
-			img(src="images/nosotros_2.jpg")
+			img(src="images/nosotros_2.jpg").resize
 		.col-md-4
 			.bkg-box
 					.text-box
@@ -22,14 +22,16 @@ section#about.container-fluid
 						.about-description
 							p  Buscamos encontrar una armonía entre el proceso de diseño conceptual, su  cuenta variable como el asoleamiento, el clima , tecnología contractiva, materialidad, mecánica de  suelos, sismos, abastecimiento de servicios básicos, sustentabilidad y contextos urbanos.
 	.container
-		span EL EQUIPO
+		span.line EL EQUIPO
 		.row
 			.col-md-offset-2.col-md-4
 				.box
-					.subtitle
+					.subtitle.text-center
 						h3 ARQUITECTURA
 					.content
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nesciunt commodi, deserunt mollitia numquam ipsa maxime earum minus quo impedit velit aliquid exercitationem temporibus! Veritatis iusto ipsa eligendi, saepe totam.
+						blockquote.pull-right  
+							p "La arquitectura es generar superficies para el desarrollo de actividades humanas."
+							small Ricardo S. Villanueva, Arquitecto fundador.
 			.col-md-4
 				img(src="images/arquitectura-01.jpg")
 		.row
@@ -37,10 +39,12 @@ section#about.container-fluid
 				img(src="images/ingenieria-01.jpg")
 			.col-md-4
 				.box
-					.subtitle
+					.subtitle.text-center
 						h3 INGENIERIA
 					.content
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, nulla! Assumenda eum ab et animi mollitia cumque id quibusdam, corporis aspernatur expedita voluptas repellat dignissimos impedit quo neque accusantium, temporibus.
+						blockquote 
+							p "Son habilidades con las que se obtienen soluciones sustentadas bajo un calculo demostrativo."
+							small Ricardo E. Esli, Ingeniero fundador.
 section#proyectos.container-fluid
 	.row
 		+section-title("Proyectos")
@@ -66,8 +70,9 @@ section#proyectos.container-fluid
 section#blog.container-fluid
 	.row
 		+section-title("Blog")
-	.container
+	.container.blog-post.mg-3
 		.row
+
 			.col-md-offset-1.col-md-3
 				img(src="images/blog_1.jpg")
 			.col-md-3
@@ -76,7 +81,9 @@ section#blog.container-fluid
 				.info_post
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias nam tempora, ex velit mollitia culpa earum delectus architecto...
 				button.btn leer más...
+	.container.blog-post.mg-3
 		.row
+
 			.col-md-offset-2.col-md-3
 				img(src="images/blog_2.jpg")
 			.col-md-3
@@ -85,7 +92,9 @@ section#blog.container-fluid
 				.info_post
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias nam tempora, ex velit mollitia culpa earum delectus architecto...
 				button.btn leer más...
+	.container.blog-post.mg-3
 		.row
+
 			.col-md-offset-3.col-md-3
 				img(src="images/blog_3.jpg")
 			.col-md-3
@@ -94,19 +103,20 @@ section#blog.container-fluid
 				.info_post
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias nam tempora, ex velit mollitia culpa earum delectus architecto...
 				button.btn leer más...
-		button.btn ver más entradas
+	button.btn ver más entradas
 
 section#contacto.container-fluid
 	.row
 		+section-title("Contacto")
-	.container
-		.col-md-offset-7.col-md-4
-			.form.form-box
-				.form-description
-					p Escribemos para ponernos en contacto contigo, si representas a una empresa, incluye los datos de tu empresa y si eres una persona natural no olvides incluir tu correo electronico, estamos aqui para hacer realidad tus ideas.
-				form
-				+input("Nombre")
-				+input("Correo")
-				+input("Asunto")
-				+textarea
-				button.btn Send Message
+	.container-fluid.bckg-contact
+		.row
+			.col-md-offset-7.col-md-4
+				.form.form-box
+					.form-description
+						p Escribemos para ponernos en contacto contigo, si representas a una empresa, incluye los datos de tu empresa y si eres una persona natural no olvides incluir tu correo electronico, estamos aqui para hacer realidad tus ideas.
+					form
+					+input("Nombre")
+					+input("Correo")
+					+input("Asunto")
+					+textarea
+					button.btn Send Message

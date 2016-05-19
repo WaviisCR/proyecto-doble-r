@@ -4,11 +4,14 @@ section #about #proyectos #blog #contacto {
 
 .bckg-trama {
 		background: url(../../images/bg_subt-01.jpg) no-repeat;
+		background-size:contain;
+		margin-bottom: 10%;
+		margin-top: 10%;
 	.tittle{
 			padding: 3% 0%;
 			margin-right: 13%;
 			font-size: 3em;
-			margin-bottom: 12%;
+			margin: 4%;
 	}
 }
 
@@ -20,9 +23,10 @@ section #about #proyectos #blog #contacto {
     p{
     	text-align: justify;
 
-    }
-	img {
-		width: 100%;
-    }
-    
+    }    
+}
+#contacto
+	.bckg-contact{
+		background: url(../../images/contacto-01.jpg);
+		background-size:cover;
 }

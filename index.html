@@ -74,10 +74,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6"><img src="images/nosotros_1.jpg"></div>
+        <div class="col-md-6"><img src="images/nosotros_1.jpg" class="resize"></div>
       </div>
       <div class="row">
-        <div class="col-md-offset-1 col-md-6"><img src="images/nosotros_2.jpg"></div>
+        <div class="col-md-offset-1 col-md-6"><img src="images/nosotros_2.jpg" class="resize"></div>
         <div class="col-md-4">
           <div class="bkg-box">
             <div class="text-box">
@@ -91,15 +91,17 @@
           </div>
         </div>
       </div>
-      <div class="container"><span>EL EQUIPO</span>
+      <div class="container"><span class="line">EL EQUIPO</span>
         <div class="row">
           <div class="col-md-offset-2 col-md-4">
             <div class="box">
-              <div class="subtitle">
+              <div class="subtitle text-center">
                 <h3>ARQUITECTURA</h3>
               </div>
               <div class="content">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nesciunt commodi, deserunt mollitia numquam ipsa maxime earum minus quo impedit velit aliquid exercitationem temporibus! Veritatis iusto ipsa eligendi, saepe totam.</p>
+                <blockquote class="pull-right"> 
+                  <p>"La arquitectura es generar superficies para el desarrollo de actividades humanas."</p><small>Ricardo S. Villanueva, Arquitecto fundador.</small>
+                </blockquote>
               </div>
             </div>
           </div>
@@ -109,11 +111,13 @@
           <div class="col-md-offset-2 col-md-4"><img src="images/ingenieria-01.jpg"></div>
           <div class="col-md-4">
             <div class="box">
-              <div class="subtitle">
+              <div class="subtitle text-center">
                 <h3>INGENIERIA</h3>
               </div>
               <div class="content">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, nulla! Assumenda eum ab et animi mollitia cumque id quibusdam, corporis aspernatur expedita voluptas repellat dignissimos impedit quo neque accusantium, temporibus.</p>
+                <blockquote> 
+                  <p>"Son habilidades con las que se obtienen soluciones sustentadas bajo un calculo demostrativo."</p><small>Ricardo E. Esli, Ingeniero fundador.</small>
+                </blockquote>
               </div>
             </div>
           </div>
@@ -159,7 +163,7 @@
           <h1 class="tittle pull-right">Blog</h1>
         </div>
       </div>
-      <div class="container">
+      <div class="container blog-post mg-3">
         <div class="row">
           <div class="col-md-offset-1 col-md-3"><img src="images/blog_1.jpg"></div>
           <div class="col-md-3">
@@ -172,6 +176,8 @@
             <button class="btn">leer más...</button>
           </div>
         </div>
+      </div>
+      <div class="container blog-post mg-3">
         <div class="row">
           <div class="col-md-offset-2 col-md-3"><img src="images/blog_2.jpg"></div>
           <div class="col-md-3">
@@ -184,6 +190,8 @@
             <button class="btn">leer más...</button>
           </div>
         </div>
+      </div>
+      <div class="container blog-post mg-3">
         <div class="row">
           <div class="col-md-offset-3 col-md-3"><img src="images/blog_3.jpg"></div>
           <div class="col-md-3">
@@ -196,8 +204,8 @@
             <button class="btn">leer más...</button>
           </div>
         </div>
-        <button class="btn">ver más entradas</button>
       </div>
+      <button class="btn">ver más entradas</button>
     </section>
     <section id="contacto" class="container-fluid">
       <div class="row">
@@ -205,40 +213,44 @@
           <h1 class="tittle pull-right">Contacto</h1>
         </div>
       </div>
-      <div class="container">
-        <div class="col-md-offset-7 col-md-4">
-          <div class="form form-box">
-            <div class="form-description">
-              <p>Escribemos para ponernos en contacto contigo, si representas a una empresa, incluye los datos de tu empresa y si eres una persona natural no olvides incluir tu correo electronico, estamos aqui para hacer realidad tus ideas.</p>
+      <div class="container-fluid bckg-contact">
+        <div class="row">
+          <div class="col-md-offset-7 col-md-4">
+            <div class="form form-box">
+              <div class="form-description">
+                <p>Escribemos para ponernos en contacto contigo, si representas a una empresa, incluye los datos de tu empresa y si eres una persona natural no olvides incluir tu correo electronico, estamos aqui para hacer realidad tus ideas.</p>
+              </div>
+              <form></form>
+              <div class="form-group">
+                <input placeholder="Nombre" required="required" class="input form-control"/>
+              </div>
+              <div class="form-group">
+                <input placeholder="Correo" required="required" class="input form-control"/>
+              </div>
+              <div class="form-group">
+                <input placeholder="Asunto" required="required" class="input form-control"/>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your message" rows="6" required="required" class="form-control"></textarea>
+              </div>
+              <button class="btn">Send Message</button>
             </div>
-            <form></form>
-            <div class="form-group">
-              <input placeholder="Nombre" required="required" class="input form-control"/>
-            </div>
-            <div class="form-group">
-              <input placeholder="Correo" required="required" class="input form-control"/>
-            </div>
-            <div class="form-group">
-              <input placeholder="Asunto" required="required" class="input form-control"/>
-            </div>
-            <div class="form-group">
-              <textarea placeholder="Your message" rows="6" required="required" class="form-control"></textarea>
-            </div>
-            <button class="btn">Send Message</button>
           </div>
         </div>
       </div>
     </section>
     <footer id="footer">
-      <div class="container text-center">
-        <div class="col-md-3">
-          <div class="social-box"><a href="https://facebook.com"><i class="fa fa-facebook fa-3x"></i></a></div>
-          <div class="social-box"><a href="https://facebook.com"><i class="fa fa-twitter fa-3x"></i></a></div>
-          <div class="social-box"><a href="https://facebook.com"><i class="fa fa-google-plus fa-3x"></i></a></div>
-          <div class="social-box"><a href="https://facebook.com"><i class="fa fa-pinterest fa-3x"></i></a></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 pull-left">
+            <div class="social-box"><a href="https://facebook.com"><i class="fa fa-facebook fa-3x"></i></a></div>
+            <div class="social-box"><a href="https://facebook.com"><i class="fa fa-twitter fa-3x"></i></a></div>
+            <div class="social-box"><a href="https://facebook.com"><i class="fa fa-google-plus fa-3x"></i></a></div>
+            <div class="social-box"><a href="https://facebook.com"><i class="fa fa-pinterest fa-3x"></i></a></div>
+          </div>
+          <div class="col-md-6 mt-35 text-center"><span class="rights">All rights reserved</span></div>
+          <div class="col-md-3"><img src="images/logonav-01.jpg" class="pull-right"></div>
         </div>
-        <div class="col-md-6 mt-35"><span class="rights">All rights reserved</span></div>
-        <div class="col-md-3"><img src="images/logonav-01.jpg"></div>
       </div>
     </footer>
   </body>

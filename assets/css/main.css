@@ -25,6 +25,9 @@ button {
 .mt-35 {
   margin-top: 35px; }
 
+.mg-3 {
+  margin: 3%; }
+
 /*header*/
 .home {
   width: 100%;
@@ -64,20 +67,26 @@ section #about #proyectos #blog #contacto {
   margin-bottom: 10%; }
 
 .bckg-trama {
-  background: url(../../images/bg_subt-01.jpg) no-repeat; }
+  background: url(../../images/bg_subt-01.jpg) no-repeat;
+  background-size: contain;
+  margin-bottom: 10%;
+  margin-top: 10%; }
   .bckg-trama .tittle {
     padding: 3% 0%;
     margin-right: 13%;
     font-size: 3em;
-    margin-bottom: 12%; }
+    margin: 4%; }
 
 #about h2 {
   font-size: 1.5em;
   text-align: center; }
 #about p {
   text-align: justify; }
-#about img {
-  width: 100%; }
+
+#contacto
+.bckg-contact {
+  background: url(../../images/contacto-01.jpg);
+  background-size: cover; }
 
 /*footer*/
 #footer .social-box {

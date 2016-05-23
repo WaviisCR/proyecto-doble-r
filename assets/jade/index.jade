@@ -1,5 +1,5 @@
-include variables
-include mixin
+include ./variables
+include ./mixin
 doctype html
 html(lang="es")
 	head
@@ -13,8 +13,8 @@ html(lang="es")
 		link(rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css")
 		link(href="assets/css/main.css" rel="stylesheet")
 	body
-		include header
-		include sections
-		include footer
+		include ./header
+		include ./sections
+		include ./footer
 	scrip(src="https://code.jquery.com/jquery-1.10.2.min.js")
 	script(type="text/javascript" src="assets/js/bootstrap.min.js")

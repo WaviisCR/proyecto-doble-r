@@ -1,16 +1,16 @@
 mixin secciones-home(name)
-	case name
-		when "name1"
-			a About
-		when "name2"
-			a Proyectos
-		when "name3"
-			a Blog
-		when "name4"
-			a Contacto
-		when "name5"
-			a
-				img(src="images/logonav-01.jpg")
+		case name
+				when "name1"
+						a About
+				when "name2"
+						a Proyectos
+				when "name3"
+						a Blog
+				when "name4"
+						a Contacto
+				when "name5"
+						a
+								img(src="images/logonav-01.jpg")
 
 mixin menu
 	ul
@@ -24,19 +24,19 @@ mixin menu
 			a(href='#contacto') Contacto
 
 mixin section-title(titulo)
-	.col-md-10.bckg-trama
-		h1.tittle.pull-right=titulo
+		.col-md-10.bckg-trama
+				h1.tittle.pull-right=titulo
 
 mixin input(pholder)
-	.form-group
-		input.input.form-control(
-			placeholder= pholder
-			required
-		)
+		.form-group
+				input.input.form-control(
+						placeholder= pholder
+						required
+				)
 mixin textarea()
-	.form-group
-		textarea.form-control(
-			placeholder="Your message"
-			rows=6
-			required
-		)
+		.form-group
+				textarea.form-control(
+						placeholder="Your message"
+						rows=6
+						required
+				)

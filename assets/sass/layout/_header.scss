@@ -3,6 +3,14 @@
     width: 100%;
     position: relative;
 
+    .carousel{
+	    position: relative;
+	    img{
+        	min-height:300px;
+        	background-size: cover;
+}
+	}
+	
     .tira {
         width: 20%;
         background-size: contain;
@@ -55,4 +63,6 @@
             margin-top: 60vh;
         }
     }
+
+    
 }

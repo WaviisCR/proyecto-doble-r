@@ -16,10 +16,27 @@ button {
   font-weight: 700;
   color: white; }
 
+/*HELPERS*/
+.pd-header {
+  padding-left: 2.5em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em; }
+
+.mt-35 {
+  margin-top: 35px; }
+
+.mg-3 {
+  margin: 3%; }
+
 /*header*/
 .home {
   width: 100%;
   position: relative; }
+  .home .carousel {
+    position: relative; }
+    .home .carousel img {
+      min-height: 300px;
+      background-size: cover; }
   .home .tira {
     width: 20%;
     background-size: contain; }

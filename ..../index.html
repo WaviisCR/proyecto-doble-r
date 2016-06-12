@@ -13,32 +13,47 @@
   </head>
   <body>
     <header id="home">
-      <!-- section.home-->
-      <!--   .tira.about-bckg.pull-left-->
-      <!--     .button.pd-header -->
-      <!--       +secciones-home("name1")-->
-      <!--   .tira.proyectos-bckg.pull-left-->
-      <!--     .button.pd-header -->
-      <!--       +secciones-home("name2")-->
-      <!--   .tira.blog-bckg.pull-left-->
-      <!--     .button.pd-header -->
-      <!--       +secciones-home("name3")-->
-      <!--   .tira.contacto-bckg.pull-left-->
-      <!--     .button.pd-header -->
-      <!--       +secciones-home("name4")-->
-      <!--   .tira.logo-bckg.pull-left-->
-      <!--     .logo-->
-      <!--       +secciones-home("name5")-->
-      
-      <section class="carousel"></section>
-      <div id="myCarousel" data-ride="carousel" class="carousel slide">
-        <div role="listbox" class="carousel-inner">
-          <div class="item active"><img src="images/slider/02.jpg" alt="Chania"></div>
-          <div class="item"><img src="images/slider/02.jpg" alt="Chania"></div>
-          <div class="item"><img src="images/slider/02.jpg" alt="Flower"></div>
+      <section class="home">
+        <div class="tira about-bckg pull-left">
+          <div class="button pd-header"> <a>About</a>
+          </div>
         </div>
-        <!-- Left and right controls--><a href="#myCarousel" role="button" data-slide="prev" class="left carousel-control"></a><a href="#myCarousel" role="button" data-slide="next" class="right carousel-control"></a>
-      </div>
+        <div class="tira proyectos-bckg pull-left">
+          <div class="button pd-header"> <a>Proyectos</a>
+          </div>
+        </div>
+        <div class="tira blog-bckg pull-left">
+          <div class="button pd-header"> <a>Blog</a>
+          </div>
+        </div>
+        <div class="tira contacto-bckg pull-left">
+          <div class="button pd-header"> <a>Contacto</a>
+          </div>
+        </div>
+        <div class="tira logo-bckg pull-left">
+          <div class="logo"><a><img src="images/logonav-01.jpg"/></a>
+          </div>
+        </div>
+      </section>
+      <section id="navbar" class="nav">
+        <nav role="navigation" class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand"><img src="images/logonav-01.jpg"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <ul>
+                  <li><a href="#about">Nosotros</a></li>
+                  <li><a href="#proyectos">Proyectos</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
     </header>
     <section id="about" class="container-fluid">
       <div class="row">
@@ -54,10 +69,9 @@
                 <div class="about">
                   <h2>Creemos que todo es posible</h2>
                 </div>
-                <div class="about-description"></div>
-                <p>En
-                  <bold> Doble R estudios</bold> queremos demostrar que se puede estar a la vanguardia en la arquitectura con una ingeniería sostenible que la respalde.
-                </p>
+                <div class="about-description">
+                  <p> </p><span>Doble R estudios </span>nace para demostrar que se puede estar a la vanguardia en la arquitectura con una ingeniería sostenible que la respalde.
+                </div>
               </div>
             </div>
           </div>
@@ -68,8 +82,8 @@
           <div class="col-md-4">
             <div class="bkg-box">
               <div class="text-box">
-                <div class="about">
-                  <h2>Somos un estudio diferente</h2>
+                <div id="about" class="aboutsection container-fluid">
+                  <h2>Somos un estudio diferente!</h2>
                 </div>
                 <div class="about-description">
                   <p> Buscamos encontrar una armonía entre el proceso de diseño conceptual, su  cuenta variable como el asoleamiento, el clima , tecnología contractiva, materialidad, mecánica de  suelos, sismos, abastecimiento de servicios básicos, sustentabilidad y contextos urbanos.</p>
@@ -79,7 +93,7 @@
           </div>
         </div>
       </div>
-      <div class="container equipo"><span class="subtitle line">EL EQUIPO</span>
+      <div class="container equipo"><span class="line">EL EQUIPO</span>
         <div class="row">
           <div class="col-md-offset-2 col-md-4">
             <div class="box">
@@ -125,9 +139,9 @@
               <h2>COMERCIO</h2>
             </div>
             <div class="description">
-              <p> Buscamos la perfeccion en el diseño y lo hacemos de la mano con una estructura resistente y funcional.</p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet quisquam, nulla? Quis praesentium consectetur ipsa, dicta accusantium doloribus adipisci debitis, aliquam ipsum in tempore magni, nesciunt fugit! Modi, cupiditate.</p>
             </div>
-            <button class="btn"> <a href="comercio.html">ver más...</a></button>
+            <button class="btn">ver más...</button>
           </div>
           <div class="col-md-offset-1 col-md-3"><img src="images/comercio-01.jpg"></div>
         </div>
@@ -138,9 +152,9 @@
               <h2>RESIDENCIAL</h2>
             </div>
             <div class="description">
-              <p> El espacio donde nos desarrollamos juega un appel protagonico en nuestras vidas, te invitamos a ver todo lo que se podemos hacer para ti.</p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet quisquam, nulla? Quis praesentium consectetur ipsa, dicta accusantium doloribus adipisci debitis, aliquam ipsum in tempore magni, nesciunt fugit! Modi, cupiditate.</p>
             </div>
-            <button class="btn"> <a href="residencial.html">ver más...</a></button>
+            <button class="btn">ver más...</button>
           </div>
         </div>
       </div>
@@ -161,7 +175,7 @@
             <div class="info_post">
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias nam tempora, ex velit mollitia culpa earum delectus architecto...</p>
             </div>
-            <button href="blog.html" class="btn">leer más...</button>
+            <button class="btn">leer más...</button>
           </div>
         </div>
       </div>
@@ -242,8 +256,6 @@
       </div>
     </footer>
   </body>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <scrip src="https://code.jquery.com/jquery-1.10.2.min.js"></scrip>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
 </html>

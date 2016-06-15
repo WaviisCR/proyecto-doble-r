@@ -2,52 +2,91 @@ include ./variables
 include ./mixin
 doctype html
 html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        link(rel="icon" href="favicon-01.png" type="favicon.ico")
-        title Doble R Estudios
-        link(href="assets/css/bootstrap.min.css" rel="stylesheet")
-        link(link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css')
-        link(rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css")
-        link(href="assets/css/main.css" rel="stylesheet")
-    body
-        include ./navbar.jade
-        section#gallery.gallery
-            .container
-                .row
-                    .col-lg-3.col-md-3.col-xs-6
-                        .thumbnail
-                            img(src="")
-                    .col-lg-3.col-md-3.col-xs-6.text-left
-                        .fichatecnica
-                            span.subtitle Nombre del proyecto 
-                            p Proyecto realizado para "el cliente", descripcion corta.
-                    .col-lg-3.col-md-3.col-xs-6.text-right
-                        .fichatecnica
-                            span.subtitle Nombre del proyecto
-                            p Proyecto realizado para "el cliente", descripcion corta.
-                    .col-lg-3.col-md-3.col-xs-6
-                        .thumbnail
-                            img(src="")
-                .row
-                    .col-lg-3.col-md-3.col-xs-6
-                        .thumbnail
-                            img(src="")
-                    .col-lg-3.col-md-3.col-xs-6.text-left
-                        .fichatecnica
-                            span.subtitle Nombre del proyecto 
-                            p Proyecto realizado para "el cliente", descripcion corta.
-                    .col-lg-3.col-md-3.col-xs-6.text-right
-                        .fichatecnica
-                            span.subtitle Nombre del proyecto
-                            p Proyecto realizado para "el cliente", descripcion corta.
-                    .col-lg-3.col-md-3.col-xs-6
-                        .thumbnail
-                            img(src="")
-                        
-    script(type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js")
-    script(type="text/javascript" src="assets/js/jquery.js")
-    script(type="text/javascript" src="assets/js/bootstrap.min.js")
-    script(type="text/javascript" src="assets/js/main.js")
+		head
+				meta(charset="UTF-8")
+				meta(name="viewport" content="width=device-width, initial-scale=1.0")
+				link(rel="icon" href="favicon-01.png" type="favicon.ico")
+				title Doble R Estudios
+				link(href="assets/css/bootstrap.min.css" rel="stylesheet")
+				link(link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css')
+				link(href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css')
+				link(rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css")
+				link(href="assets/css/main.css" rel="stylesheet")
+		body
+				include ./navbar.jade
+
+				.title
+					h1.line RESIDENCIAL
+					.guion
+				section#gallery.gallery
+					.container
+							.row
+									.col-lg-3.col-md-3.col-xs-6
+											.thumbnail
+													img(src="")
+									.col-lg-3.col-md-3.col-xs-6.text-left
+											.fichatecnica
+													span Tipo: Multifamiliar
+													span.subtitle Cliente: privado
+													p Proyecto realizado para "el cliente", descripcion corta
+													button.btn
+															a ver más!
+									.col-lg-3.col-md-3.col-xs-6
+											.thumbnail
+													img(src="")
+									.col-lg-3.col-md-3.col-xs-6.text-left
+											.fichatecnica
+													span Tipo: Temporal - La fomentera
+													span.subtitle Cliente: privado
+													p Proyecto realizado para "el cliente", descripcion corta.
+													button.btn
+															a ver más!
+
+							.row
+								.col-lg-3.col-md-3.col-xs-6.text-right
+										.fichatecnica
+												span Tipo: Urbana H-01
+												span.subtitle Cliente: privado 
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn
+														a ver más!
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
+								.col-lg-3.col-md-3.col-xs-6.text-right
+										.fichatecnica
+												span Tipo: Urbana H-02
+												span.subtitle Cliente: privado
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn
+														a ver más!
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
+												
+							.row
+									.col-lg-3.col-md-3.col-xs-6
+											.thumbnail
+													img(src="")
+									.col-lg-3.col-md-3.col-xs-6.text-left
+											.fichatecnica
+													span Tipo: Urbana H-03
+													span.subtitle Cliente: privado 
+													p Proyecto realizado para "el cliente", descripcion corta.
+													button.btn
+														a ver más!
+									.col-lg-3.col-md-3.col-xs-6
+											.thumbnail
+													img(src="")
+									.col-lg-3.col-md-3.col-xs-6.text-left
+											.fichatecnica
+												span Tipo: Urbana Pueblo Libre
+												span.subtitle Cliente: privado
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn
+														a ver más!
+							
+		script(type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js")
+		script(type="text/javascript" src="assets/js/jquery.js")
+		script(type="text/javascript" src="assets/js/bootstrap.min.js")
+		script(type="text/javascript" src="assets/js/main.js")

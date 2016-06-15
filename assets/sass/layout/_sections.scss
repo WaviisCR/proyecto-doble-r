@@ -11,20 +11,58 @@ section #about #proyectos #blog #contacto {
 			padding: 3% 0%;
 			margin-right: 13%;
 			font-size: 3em;
-			margin: 4%;
+			margin: 6%;
 	}
 }
 
 #about {
-	h2 {
-		font-size: 1.5em;
-		text-align: center;
-    }
-    p{
+	img {
+		margin-bottom: 20%;
+	}
+	.text-box {
+		width: 150%;
+    	padding: 2% 70% 2% 4%;
+    	margin-top: 30%;
+    	background: rgba(0, 0, 0, 0.1);
+    	text-align: left;
+		h2 {
+		font-size: 2.3em;
+		margin-bottom: 6%;
+    	}
+    	p{
     	text-align: justify;
+    	}
+	}
+	.box-dos {
+		width: 130%;
+		text-align: right;
+    	padding: 2% 5% 2% 40%;
+    	margin-top: 18%;
+	}
+	.bck {
+		z-index: -1000;
+	}
+	.equipo {
+		margin-top: 5%;
+		.subtitle-uno {
+			p {
+			font-size: 3.5em;
+			color: #777;
+			font-family: 'Fjalla One', sans-serif;
+			margin-bottom: 0px;
+			}
+			
+		}
+		.box-equipo {
+			background: red;
+			.content {
+				display: inline;
+			}	
+		}
+	}
 
-    }    
 }
+
 #contacto
 	.bckg-contact{
 		background: url(../../images/contacto-01.jpg);

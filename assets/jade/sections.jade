@@ -13,27 +13,29 @@ section#about.container-fluid
 							| En
 							bold  Doble R estudios
 							|  queremos demostrar que se puede estar a la vanguardia en la arquitectura con una ingeniería sostenible que la respalde.
-			.col-md-6
+			.col-md-6.bck
 				img(src="images/nosotros_1.jpg").resize
 		.row
-			.col-md-offset-1.col-md-6
+			.col-md-offset-1.col-md-5.bck
 				img(src="images/nosotros_2.jpg").resize
 			.col-md-4
 				.bkg-box
-					.text-box
+					.text-box.box-dos
 						.about
 							h2 Somos un estudio diferente
 						.about-description
-							p  Buscamos encontrar una armonía entre el proceso de diseño conceptual, su  cuenta variable como el asoleamiento, el clima , tecnología contractiva, materialidad, mecánica de  suelos, sismos, abastecimiento de servicios básicos, sustentabilidad y contextos urbanos.
+							p  Buscamos encontrar una armonía entre el proceso de diseño conceptual, su  cuenta variable como el asoleamiento, el clima, tecnología contractiva, materialidad, mecánica de  suelos, sismos, abastecimiento de servicios básicos, sustentabilidad y contextos urbanos.
 	.container.equipo
-		span.subtitle.line EL EQUIPO
+		.subtitle-uno.line 
+			p EL EQUIPO
+			.guion
 		.row
 			.col-md-offset-2.col-md-4
-				.box
+				.box-equipo
 					.subtitle.text-center
 						h3 ARQUITECTURA
 					.content
-						blockquote.pull-right  
+						blockquote  
 							p "La arquitectura es generar superficies para el desarrollo de actividades humanas."
 							small Ricardo S. Villanueva, Arquitecto fundador.
 			.col-md-4
@@ -42,7 +44,7 @@ section#about.container-fluid
 			.col-md-offset-2.col-md-4
 				img(src="images/ingenieria-01.jpg")
 			.col-md-4
-				.box
+				.box-equipo
 					.subtitle.text-center
 						h3 INGENIERIA
 					.content
@@ -54,7 +56,7 @@ section#proyectos.container-fluid
 		+section-title("Proyectos")
 	.container
 		.row
-			.col-md-offset-2.col-md-4
+			.col-md-offset-2.col-md-4.text-right
 				.sub_section
 					h2 COMERCIO
 				.description
@@ -66,13 +68,24 @@ section#proyectos.container-fluid
 		.row
 			.col-md-offset-2.col-md-3
 				img(src="images/residencial-01.jpg")
-			.col-md-offset-1.col-md-4
+			.col-md-offset-1.col-md-4.text-left
 				.sub_section
 					h2 RESIDENCIAL
 				.description
-					p  El espacio donde nos desarrollamos juega un appel protagonico en nuestras vidas, te invitamos a ver todo lo que se podemos hacer para ti.
+					p  Diseño de espacios habitables teniendo en cuenta variables como el clima, asoleamiento, ahorro energético, sismos, sistemas sistemas constructivos, materialidad, espacialidad. 
 				button.btn 
 					a(href="residencial.html") ver más...
+		.row
+			.col-md-offset-2.col-md-4.text-right
+				.sub_section
+					h2 DISEÑO DE INTERIORES
+				.description
+					p  Diseño de espacios, mobiliarios decorativo y/o funcional teniendo en cuenta  materiales, color, iluminación.
+				button.btn 
+					a(href="desing.html") ver más...
+			.col-md-offset-1.col-md-3
+				img(src="images/comercio-01.jpg")
+		
 section#blog.container-fluid
 	.row
 		+section-title("Blog")
@@ -100,7 +113,6 @@ section#blog.container-fluid
 				button.btn leer más...
 	.container.blog-post.mg-3
 		.row
-
 			.col-md-offset-3.col-md-3
 				img(src="images/blog_3.jpg")
 			.col-md-3
@@ -109,6 +121,7 @@ section#blog.container-fluid
 				.info_post
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias nam tempora, ex velit mollitia culpa earum delectus architecto...
 				button.btn leer más...
+			
 	button.btn ver más entradas
 
 section#contacto.container-fluid

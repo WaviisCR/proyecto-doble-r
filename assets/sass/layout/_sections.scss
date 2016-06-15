@@ -16,9 +16,7 @@ section #about #proyectos #blog #contacto {
 }
 
 #about {
-	img {
-		margin-bottom: 20%;
-	}
+	
 	.text-box {
 		width: 150%;
     	padding: 2% 70% 2% 4%;
@@ -42,9 +40,25 @@ section #about #proyectos #blog #contacto {
 	.bck {
 		z-index: -1000;
 	}
+
+		.uno{
+			margin-top: 10%;
+			margin-left: -13%;
+		}
+		.dos{
+			margin-top: -10%;
+			margin-left: 13%;
+		}
+		.tres{
+			margin-top: 10%;
+			margin-left: -13%;
+			}
+
 	.equipo {
 		margin-top: 5%;
 		.subtitle-uno {
+			margin-bottom: 4%;
+			margin-left: 16%;
 			p {
 			font-size: 3.5em;
 			color: #777;
@@ -54,10 +68,31 @@ section #about #proyectos #blog #contacto {
 			
 		}
 		.box-equipo {
-			background: red;
+			background-color: $cyan;
+			padding: 10% 20%;
+			color: white;
+			width: 95%;
+			h3{
+				color:white;
+				font-size: 2.2em;
+				margin-bottom: 12%;
+			}
+			p{
+				font-size: 1.2em;
+			}
+			
+			.blockquote-left{
+				text-align: left;
+			}
+			.blockquote-right{
+				text-align: right;
+			}
 			.content {
 				display: inline;
-			}	
+			}
+			small{
+				font-style:italic;
+			}
 		}
 	}
 

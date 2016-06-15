@@ -1,13 +1,27 @@
-section#navbar.nav
-	nav.navbar(role='navigation')
-		.navbar-header
-			button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-				span.sr-only Toggle navigation
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			a.brand(href='index.html#home')
-				img(src="images/logonav-01.jpg")
-		.collapse.navbar-collapse
-			ul.nav.navbar-nav.navbar-right
-				+menu
+// Navigation
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    // Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-left
+        li.hidden
+          a(href='#home')
+        li
+          a.page-scroll(href='index.html#about') Nosotros
+        li
+          a.page-scroll(href='index.html#proyectos') Proyectos
+        li
+          a.page-scroll(href='index.html#blog') Blog
+        li
+          a.page-scroll(href='index.html#contacto') Contacto
+      a.brand.page-scroll.pull-right(href='index.html#home')
+       img(src="images/logonav-01.jpg")    
+    // /.navbar-collapse
+  // /.container-fluid

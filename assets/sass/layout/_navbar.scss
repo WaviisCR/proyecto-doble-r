@@ -1,0 +1,51 @@
+nav{
+	img{
+	position: absolute;
+    right: 0px;
+    height: 5em;
+	}
+}
+.navbar-default {
+  background-color: $gray-blue;
+  border-color: transparent;
+  .navbar-brand {
+    color: #fed136;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    &:hover, &:focus, &:active, &.active {
+      color: #fec503;
+    }
+  }
+  .navbar-collapse {
+    border-color: rgba(255, 255, 255, 0.02);
+  }
+  .navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136;
+    .icon-bar {
+      background-color: white;
+    }
+    &:hover, &:focus {
+      background-color: #fed136;
+    }
+  }
+  .nav li a {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    &:hover, &:focus {
+      color: #fed136;
+      outline: none;
+    }
+  }
+  .navbar-nav > .active > a {
+    border-radius: 0;
+    color: white;
+    background-color: #fed136;
+    &:hover, &:focus {
+      color: white;
+      background-color: #fec503;
+    }
+  }
+}

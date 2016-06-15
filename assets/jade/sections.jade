@@ -30,27 +30,27 @@ section#about.container-fluid
 			p EL EQUIPO
 			.guion
 		.row
-			.col-md-offset-2.col-md-4
+			.col-md-offset-2.col-md-4.col-lg-4.col-xs-6
 				.box-equipo
-					.subtitle.text-center
+					.subtitle.text-right
 						h3 ARQUITECTURA
 					.content
-						blockquote  
+						.blockquote-right
 							p "La arquitectura es generar superficies para el desarrollo de actividades humanas."
-							small Ricardo S. Villanueva, Arquitecto fundador.
-			.col-md-4
-				img(src="images/arquitectura-01.jpg")
+							small - Ricardo S. Villanueva, Arquitecto fundador.
+			.col-md-4.col-lg-4.col-xs-6
+				img.uno(src="images/arquitectura-01.jpg")
 		.row
-			.col-md-offset-2.col-md-4
-				img(src="images/ingenieria-01.jpg")
-			.col-md-4
-				.box-equipo
-					.subtitle.text-center
+			.col-md-offset-2.col-md-4.col-lg-4.col-xs-6
+				img.dos(src="images/ingenieria-01.jpg")
+			.col-md-4.col-lg-4.col-xs-6
+				.box-equipo.tres
+					.subtitle.text-left
 						h3 INGENIERIA
 					.content
-						blockquote 
+						.blockquote-left
 							p "Son habilidades con las que se obtienen soluciones sustentadas bajo un calculo demostrativo."
-							small Ricardo E. Esli, Ingeniero fundador.
+							small - Ricardo E. Esli, Ingeniero fundador.
 section#proyectos.container-fluid
 	.row
 		+section-title("Proyectos")
@@ -121,7 +121,6 @@ section#blog.container-fluid
 				.info_post
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias nam tempora, ex velit mollitia culpa earum delectus architecto...
 				button.btn leer más...
-			
 	button.btn ver más entradas
 
 section#contacto.container-fluid

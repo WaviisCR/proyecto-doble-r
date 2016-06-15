@@ -2,503 +2,332 @@ include ./variables
 include ./mixin
 doctype html
 html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        link(rel="icon" href="favicon-01.png" type="favicon.ico")
-        title Doble R Estudios
-        link(href="assets/css/bootstrap.min.css" rel="stylesheet")
-        link(link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css')
-        link(rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css")
-        link(href="assets/css/main.css" rel="stylesheet")
-    body
-        include ./navbar.jade
-        
-        .title
-          h1.line COMERCIO
-          .guion
-          p Diseño de infraestructura comercial 
-          p Oficinas: 
-            span Diseño de espacios que brinden confort e impulsen la creatividad de los trabajadores, mejorando el ambiente laboral y contribuyendo a la productividad de la empresa 
-          p Retail: 
-            span Diseño de módulos comerciales personalizados según requerimientos de las marcas con el objetivo de incrementar la venta de sus productos.
-        section#gallery.gallery
-          .container
-            .row
-              .col-lg-3.col-md-3.col-xs-6
-                  .thumbnail
-                      img(src="")
-              .col-lg-3.col-md-3.col-xs-6.text-left
-                  .fichatecnica
-                      h2.descript Cliente: 
-                        span T&D
-                      h2.descript Tipo de Proyecto: 
-                        span Oficina
-                      button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
-                          a ver más...
-                      // modal
-                      #comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                        .modal-dialog
-                          .modal-content
-                            .modal-header
-                              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                              h4.modal-title Nombre de proyecto
-                            .modal-body
-                              #myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
-                                // Wrapper for slides
-                                .carousel-inner
-                                  .item.active
-                                    img(src='images/nosotros_1.jpg', alt='First slide')
-                                    .box.carousel-caption
-                                      h3 First slide label
-                                      p Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                  .item
-                                    img(src="images/nosotros_2.jpg", alt='Second slide')
-                                    .box.carousel-caption
-                                      h3 Second slide label
-                                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  .item
-                                    img(src='images/nosotros_1.jpg', alt='Third slide')
-                                    .box.carousel-caption
-                                      h3 Third slide label
-                                      p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                // Controls
-                                a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                  span.glyphicon.glyphicon-chevron-left
-                                a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                  span.glyphicon.glyphicon-chevron-right
-                            .modal-footer
-                              button.btn.btn-default(type='button', data-dismiss='modal') Close
-                              button.btn.btn-primary(type='button')
-                                a(href='index.html#contacto') Contactanos!
-                          // /.modal-content
-                        // /.modal-dialog
-                      // /.modal
-                        
-                .col-lg-3.col-md-3.col-xs-6
-                    .thumbnail
-                        img(src="")
-                .col-lg-3.col-md-3.col-xs-6.text-left
-                    .fichatecnica
-                        h2.descript Cliente: 
-                          span Coney Park
-                        h2.descript Tipo de Proyecto: 
-                        span Retail
-                      button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
-                          a ver más...
-                      // modal
-                      #comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                        .modal-dialog
-                          .modal-content
-                            .modal-header
-                              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                              h4.modal-title Nombre de proyecto
-                            .modal-body
-                              #myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
-                                // Wrapper for slides
-                                .carousel-inner
-                                  .item.active
-                                    img(src='images/nosotros_1.jpg', alt='First slide')
-                                    .box.carousel-caption
-                                      h3 First slide label
-                                      p Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                  .item
-                                    img(src="images/nosotros_2.jpg", alt='Second slide')
-                                    .box.carousel-caption
-                                      h3 Second slide label
-                                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  .item
-                                    img(src='images/nosotros_1.jpg', alt='Third slide')
-                                    .box.carousel-caption
-                                      h3 Third slide label
-                                      p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                // Controls
-                                a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                  span.glyphicon.glyphicon-chevron-left
-                                a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                  span.glyphicon.glyphicon-chevron-right
-                            .modal-footer
-                              button.btn.btn-default(type='button', data-dismiss='modal') Close
-                              button.btn.btn-primary(type='button')
-                                a(href='index.html#contacto') Contactanos!
-                          // /.modal-content
-                        // /.modal-dialog
-                      // /.modal
+		head
+				meta(charset="UTF-8")
+				meta(name="viewport" content="width=device-width, initial-scale=1.0")
+				link(rel="icon" href="favicon-01.png" type="favicon.ico")
+				title Doble R Estudios
+				link(href="assets/css/bootstrap.min.css" rel="stylesheet")
+				link(link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css')
+				link(href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css')
+				link(rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css")
+				link(href="assets/css/main.css" rel="stylesheet")
+		body
+				include ./navbar.jade
+				
+				.title
+					h1.line COMERCIO
+					.guion
+					p Diseño de infraestructura comercial 
+					p Oficinas: 
+						span Diseño de espacios que brinden confort e impulsen la creatividad de los trabajadores, mejorando el ambiente laboral y contribuyendo a la productividad de la empresa 
+					p Retail: 
+						span Diseño de módulos comerciales personalizados según requerimientos de las marcas con el objetivo de incrementar la venta de sus productos.
 
-              .row
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                        h2.descript Cliente: 
-                          span Coney Park
-                        h2.descript Ubicacion: 
-                          span Barranca
-                        span.subtitle Tipo de Proyecto: Retail
-                         button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio3")
-                            a ver más...
-                        button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
-                          a ver más...
-                      // modal
-                      #comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                        .modal-dialog
-                          .modal-content
-                            .modal-header
-                              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                              h4.modal-title Nombre de proyecto
-                            .modal-body
-                              #myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
-                                // Wrapper for slides
-                                .carousel-inner
-                                  .item.active
-                                    img(src='images/nosotros_1.jpg', alt='First slide')
-                                    .box.carousel-caption
-                                      h3 First slide label
-                                      p Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                  .item
-                                    img(src="images/nosotros_2.jpg", alt='Second slide')
-                                    .box.carousel-caption
-                                      h3 Second slide label
-                                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  .item
-                                    img(src='images/nosotros_1.jpg', alt='Third slide')
-                                    .box.carousel-caption
-                                      h3 Third slide label
-                                      p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                // Controls
-                                a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                  span.glyphicon.glyphicon-chevron-left
-                                a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                  span.glyphicon.glyphicon-chevron-right
-                            .modal-footer
-                              button.btn.btn-default(type='button', data-dismiss='modal') Close
-                              button.btn.btn-primary(type='button')
-                                a(href='index.html#contacto') Contactanos!
-                          // /.modal-content
-                        // /.modal-dialog
-                      // /.modal
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                          span.subtitle Cliente: Coney Park
-                          span Ubicacion: Mega Plaza
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                          
-              .row
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: Coney Park
-                          span Ubicacion: Metro Huaylas
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-                          #myModal.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                            .modal-dialog
-                              .modal-content
-                                .modal-header
-                                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                                  h4.modal-title Nombre de proyecto
-                                .modal-body
-                                  #myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
-                                  
-                                    // Wrapper for slides
-                                    .carousel-inner
-                                      .item.active
-                                        img(src='images/nosotros_1.jpg', alt='First slide')
-                                        .box.carousel-caption
-                                          h3 First slide label
-                                          p Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                      .item
-                                        img(src="images/nosotros_2.jpg", alt='Second slide')
-                                        .box.carousel-caption
-                                          h3 Second slide label
-                                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                      .item
-                                        img(src='images/nosotros_1.jpg', alt='Third slide')
-                                        .box.carousel-caption
-                                          h3 Third slide label
-                                          p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                    // Controls
-                                    a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                      span.glyphicon.glyphicon-chevron-left
-                                    a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                      span.glyphicon.glyphicon-chevron-right
-                                .modal-footer
-                                  button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                  button.btn.btn-primary(type='button')
-                                    a(href='index.html#contacto') Contactanos!
-                              // /.modal-content
-                            // /.modal-dialog
-                          // /.modal
-                          
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: Coney Park
-                          span Ubicacion: Trujillo
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
+				section#gallery.gallery
+					.container
+							.row
+								.col-lg-3.col-md-3.col-xs-6.text-right
+										.fichatecnica
+												span Tipo: Urbana H-01
+												span.subtitle Cliente: privado 
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
+													a ver más...
+												// modal
+												#comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+													.modal-dialog
+														.modal-content
+															.modal-header
+																button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+																h4.modal-title Nombre de proyecto
+															.modal-body
+																#myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
+																	// Wrapper for slides
+																	.carousel-inner
+																		.item.active
+																			img(src='images/nosotros_1.jpg', alt='First slide')
+																			.box.carousel-caption
+																				h3 First slide label
+																				p Nulla vitae elit libero, a pharetra augue mollis interdum.
+																		.item
+																			img(src="images/nosotros_2.jpg", alt='Second slide')
+																			.box.carousel-caption
+																				h3 Second slide label
+																				p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+																		.item
+																			img(src='images/nosotros_1.jpg', alt='Third slide')
+																			.box.carousel-caption
+																				h3 Third slide label
+																				p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+																	// Controls
+																	a.left.carousel-control(href='#myCarousel', data-slide='prev')
+																		span.glyphicon.glyphicon-chevron-left
+																	a.right.carousel-control(href='#myCarousel', data-slide='next')
+																		span.glyphicon.glyphicon-chevron-right
+															.modal-footer
+																button.btn.btn-default(type='button', data-dismiss='modal') Close
+																button.btn.btn-primary(type='button')
+																	a(href='index.html#contacto') Contactanos!
+														// /.modal-content
+													// /.modal-dialog
+												// /.modal.btn
+														a ver más!
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
+								
+								.col-lg-3.col-md-3.col-xs-6.text-right
+										.fichatecnica
+												span Tipo: Urbana H-02
+												span.subtitle Cliente: privado
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
+													a ver más...
+												// modal
+												#comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+													.modal-dialog
+														.modal-content
+															.modal-header
+																button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+																h4.modal-title Nombre de proyecto
+															.modal-body
+																#myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
+																	// Wrapper for slides
+																	.carousel-inner
+																		.item.active
+																			img(src='images/nosotros_1.jpg', alt='First slide')
+																			.box.carousel-caption
+																				h3 First slide label
+																				p Nulla vitae elit libero, a pharetra augue mollis interdum.
+																		.item
+																			img(src="images/nosotros_2.jpg", alt='Second slide')
+																			.box.carousel-caption
+																				h3 Second slide label
+																				p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+																		.item
+																			img(src='images/nosotros_1.jpg', alt='Third slide')
+																			.box.carousel-caption
+																				h3 Third slide label
+																				p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+																	// Controls
+																	a.left.carousel-control(href='#myCarousel', data-slide='prev')
+																		span.glyphicon.glyphicon-chevron-left
+																	a.right.carousel-control(href='#myCarousel', data-slide='next')
+																		span.glyphicon.glyphicon-chevron-right
+															.modal-footer
+																button.btn.btn-default(type='button', data-dismiss='modal') Close
+																button.btn.btn-primary(type='button')
+																	a(href='index.html#contacto') Contactanos!
+														// /.modal-content
+													// /.modal-dialog
+												// /.modal.btn
+														a ver más!
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
+												
+							.row
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
+								.col-lg-3.col-md-3.col-xs-6.text-left
+										.fichatecnica
+												span Tipo: Urbana H-03
+												span.subtitle Cliente: privado 
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
+												a ver más...
+											// modal
+											#comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+												.modal-dialog
+													.modal-content
+														.modal-header
+															button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+															h4.modal-title Nombre de proyecto
+														.modal-body
+															#myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
+																// Wrapper for slides
+																.carousel-inner
+																	.item.active
+																		img(src='images/nosotros_1.jpg', alt='First slide')
+																		.box.carousel-caption
+																			h3 First slide label
+																			p Nulla vitae elit libero, a pharetra augue mollis interdum.
+																	.item
+																		img(src="images/nosotros_2.jpg", alt='Second slide')
+																		.box.carousel-caption
+																			h3 Second slide label
+																			p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+																	.item
+																		img(src='images/nosotros_1.jpg', alt='Third slide')
+																		.box.carousel-caption
+																			h3 Third slide label
+																			p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+																// Controls
+																a.left.carousel-control(href='#myCarousel', data-slide='prev')
+																	span.glyphicon.glyphicon-chevron-left
+																a.right.carousel-control(href='#myCarousel', data-slide='next')
+																	span.glyphicon.glyphicon-chevron-right
+														.modal-footer
+															button.btn.btn-default(type='button', data-dismiss='modal') Close
+															button.btn.btn-primary(type='button')
+																a(href='index.html#contacto') Contactanos!
+													// /.modal-content
+												// /.modal-dialog
+											// /.modal.btn
+													a ver más!
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
+								.col-lg-3.col-md-3.col-xs-6.text-left
+										.fichatecnica
+											span Tipo: Urbana Pueblo Libre
+											span.subtitle Cliente: privado
+											p Proyecto realizado para "el cliente", descripcion corta.
+											button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
+												a ver más...
+											// modal
+											#comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+												.modal-dialog
+													.modal-content
+														.modal-header
+															button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+															h4.modal-title Nombre de proyecto
+														.modal-body
+															#myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
+																// Wrapper for slides
+																.carousel-inner
+																	.item.active
+																		img(src='images/nosotros_1.jpg', alt='First slide')
+																		.box.carousel-caption
+																			h3 First slide label
+																			p Nulla vitae elit libero, a pharetra augue mollis interdum.
+																	.item
+																		img(src="images/nosotros_2.jpg", alt='Second slide')
+																		.box.carousel-caption
+																			h3 Second slide label
+																			p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+																	.item
+																		img(src='images/nosotros_1.jpg', alt='Third slide')
+																		.box.carousel-caption
+																			h3 Third slide label
+																			p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+																// Controls
+																a.left.carousel-control(href='#myCarousel', data-slide='prev')
+																	span.glyphicon.glyphicon-chevron-left
+																a.right.carousel-control(href='#myCarousel', data-slide='next')
+																	span.glyphicon.glyphicon-chevron-right
+														.modal-footer
+															button.btn.btn-default(type='button', data-dismiss='modal') Close
+															button.btn.btn-primary(type='button')
+																a(href='index.html#contacto') Contactanos!
+													// /.modal-content
+												// /.modal-dialog
+											// /.modal
+											
+							.row
+								.col-lg-3.col-md-3.col-xs-6.text-right
+										.fichatecnica
+												span Tipo: Urbana H-01
+												span.subtitle Cliente: privado 
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
+													a ver más...
+												// modal
+												#comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+													.modal-dialog
+														.modal-content
+															.modal-header
+																button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+																h4.modal-title Nombre de proyecto
+															.modal-body
+																#myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
+																	// Wrapper for slides
+																	.carousel-inner
+																		.item.active
+																			img(src='images/nosotros_1.jpg', alt='First slide')
+																			.box.carousel-caption
+																				h3 First slide label
+																				p Nulla vitae elit libero, a pharetra augue mollis interdum.
+																		.item
+																			img(src="images/nosotros_2.jpg", alt='Second slide')
+																			.box.carousel-caption
+																				h3 Second slide label
+																				p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+																		.item
+																			img(src='images/nosotros_1.jpg', alt='Third slide')
+																			.box.carousel-caption
+																				h3 Third slide label
+																				p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+																	// Controls
+																	a.left.carousel-control(href='#myCarousel', data-slide='prev')
+																		span.glyphicon.glyphicon-chevron-left
+																	a.right.carousel-control(href='#myCarousel', data-slide='next')
+																		span.glyphicon.glyphicon-chevron-right
+															.modal-footer
+																button.btn.btn-default(type='button', data-dismiss='modal') Close
+																button.btn.btn-primary(type='button')
+																	a(href='index.html#contacto') Contactanos!
+														// /.modal-content
+													// /.modal-dialog
+												// /.modal.btn
+														a ver más!
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
+								
+								.col-lg-3.col-md-3.col-xs-6.text-right
+										.fichatecnica
+												span Tipo: Urbana H-02
+												span.subtitle Cliente: privado
+												p Proyecto realizado para "el cliente", descripcion corta.
+												button.btn(type="button" class="btn" data-toggle="modal" data-target="#comercio1")
+													a ver más...
+												// modal
+												#comercio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+													.modal-dialog
+														.modal-content
+															.modal-header
+																button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+																h4.modal-title Nombre de proyecto
+															.modal-body
+																#myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
+																	// Wrapper for slides
+																	.carousel-inner
+																		.item.active
+																			img(src='images/nosotros_1.jpg', alt='First slide')
+																			.box.carousel-caption
+																				h3 First slide label
+																				p Nulla vitae elit libero, a pharetra augue mollis interdum.
+																		.item
+																			img(src="images/nosotros_2.jpg", alt='Second slide')
+																			.box.carousel-caption
+																				h3 Second slide label
+																				p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+																		.item
+																			img(src='images/nosotros_1.jpg', alt='Third slide')
+																			.box.carousel-caption
+																				h3 Third slide label
+																				p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+																	// Controls
+																	a.left.carousel-control(href='#myCarousel', data-slide='prev')
+																		span.glyphicon.glyphicon-chevron-left
+																	a.right.carousel-control(href='#myCarousel', data-slide='next')
+																		span.glyphicon.glyphicon-chevron-right
+															.modal-footer
+																button.btn.btn-default(type='button', data-dismiss='modal') Close
+																button.btn.btn-primary(type='button')
+																	a(href='index.html#contacto') Contactanos!
+														// /.modal-content
+													// /.modal-dialog
+												// /.modal.btn
+														a ver más!
+								.col-lg-3.col-md-3.col-xs-6
+										.thumbnail
+												img(src="")
 
-              .row
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                          span.subtitle Cliente: Coney Park
-                          span Ubicacion: Open Plaza La Marina
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-                              a ver más!
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                          span.subtitle Cliente: Max Factor
-                          span Ubicacion: Tienda Paris Bellavista
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                
-                .row
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: Max Factor
-                          span Ubicacion: Tienda Paris Brasil
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn(type="button" class="btn" data-toggle="modal" data-target="#myModal")
-                              a ver más...
-                          #myModal.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                            .modal-dialog
-                              .modal-content
-                                .modal-header
-                                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                                  h4.modal-title Nombre de proyecto
-                                .modal-body
-                                  #myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
-                                  
-                                    // Wrapper for slides
-                                    .carousel-inner
-                                      .item.active
-                                        img(src='images/nosotros_1.jpg', alt='First slide')
-                                        .box.carousel-caption
-                                          h3 First slide label
-                                          p Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                      .item
-                                        img(src="images/nosotros_2.jpg", alt='Second slide')
-                                        .box.carousel-caption
-                                          h3 Second slide label
-                                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                      .item
-                                        img(src='images/nosotros_1.jpg', alt='Third slide')
-                                        .box.carousel-caption
-                                          h3 Third slide label
-                                          p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                    // Controls
-                                    a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                      span.glyphicon.glyphicon-chevron-left
-                                    a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                      span.glyphicon.glyphicon-chevron-right
-                                .modal-footer
-                                  button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                  button.btn.btn-primary(type='button')
-                                    a(href='index.html#contacto') Contactanos!
-                              // /.modal-content
-                            // /.modal-dialog
-                          // /.modal
-                          
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: Max Factor
-                          span Ubicacion: Tienda Paris Trujillo
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-
-              .row
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                          span.subtitle Cliente: Max Factor
-                          span Ubicacion: Tienda Saga Chiclayo
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                          span.subtitle Cliente: Perfumerias unidas
-                          span Ubicacion: Wong Chacarilla
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                          
-              .row
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: Perfumerias unidas
-                          span Ubicacion: Wong San Borja
-                          button.btn(type="button" class="btn" data-toggle="modal" data-target="#myModal")
-                              a ver más...
-                          #myModal.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                            .modal-dialog
-                              .modal-content
-                                .modal-header
-                                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                                  h4.modal-title Nombre de proyecto
-                                .modal-body
-                                  #myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
-                                  
-                                    // Wrapper for slides
-                                    .carousel-inner
-                                      .item.active
-                                        img(src='images/nosotros_1.jpg', alt='First slide')
-                                        .box.carousel-caption
-                                          h3 First slide label
-                                          p Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                      .item
-                                        img(src="images/nosotros_2.jpg", alt='Second slide')
-                                        .box.carousel-caption
-                                          h3 Second slide label
-                                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                      .item
-                                        img(src='images/nosotros_1.jpg', alt='Third slide')
-                                        .box.carousel-caption
-                                          h3 Third slide label
-                                          p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                    // Controls
-                                    a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                      span.glyphicon.glyphicon-chevron-left
-                                    a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                      span.glyphicon.glyphicon-chevron-right
-                                .modal-footer
-                                  button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                  button.btn.btn-primary(type='button')
-                                    a(href='index.html#contacto') Contactanos!
-                              // /.modal-content
-                            // /.modal-dialog
-                          // /.modal
-                          
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: Perfumerias unidas
-                          span Ubicacion: Wong San Miguel
-                          button.btn
-                              a ver más!
-
-              .row
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                          span.subtitle Cliente: US Polo ASNN
-                          span Ubicacion: Bellavista
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-right
-                      .fichatecnica
-                          span.subtitle Cliente: US Polo ASNN
-                          span Ubicacion: Brasil
-                          button.btn
-                              a ver más!
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                          
-              .row
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: US Polo ASNN
-                          span Ubicacion: Lambramani
-                          span.subtitle Tipo de Proyecto: Oficina
-                          button.btn(type="button" class="btn" data-toggle="modal" data-target="#myModal")
-                              a ver más...
-                          #myModal.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                            .modal-dialog
-                              .modal-content
-                                .modal-header
-                                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-                                  h4.modal-title Nombre de proyecto
-                                .modal-body
-                                  #myCarousel.carousel.slide.carousel-fit(data-ride='carousel')
-                                  
-                                    // Wrapper for slides
-                                    .carousel-inner
-                                      .item.active
-                                        img(src='images/nosotros_1.jpg', alt='First slide')
-                                        .box.carousel-caption
-                                          h3 First slide label
-                                          p Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                      .item
-                                        img(src="images/nosotros_2.jpg", alt='Second slide')
-                                        .box.carousel-caption
-                                          h3 Second slide label
-                                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                      .item
-                                        img(src='images/nosotros_1.jpg', alt='Third slide')
-                                        .box.carousel-caption
-                                          h3 Third slide label
-                                          p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                    // Controls
-                                    a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                      span.glyphicon.glyphicon-chevron-left
-                                    a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                      span.glyphicon.glyphicon-chevron-right
-                                .modal-footer
-                                  button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                  button.btn.btn-primary(type='button')
-                                    a(href='index.html#contacto') Contactanos!
-                              // /.modal-content
-                            // /.modal-dialog
-                          // /.modal
-                          
-                  .col-lg-3.col-md-3.col-xs-6
-                      .thumbnail
-                          img(src="")
-                  .col-lg-3.col-md-3.col-xs-6.text-left
-                      .fichatecnica
-                          span.subtitle Cliente: US Polo ASNN
-                          span Ubicacion: Mega Plaza
-                          span.subtitle Tipo de Proyecto: Retail
-                          button.btn
-                              a ver más!
-
-    script(type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js")
-    script(type="text/javascript" src="assets/js/jquery.js")
-    script(type="text/javascript" src="assets/js/bootstrap.min.js")
-    script(type="text/javascript" src="assets/js/main.js")
+		script(type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js")
+		script(type="text/javascript" src="assets/js/jquery.js")
+		script(type="text/javascript" src="assets/js/bootstrap.min.js")
+		script(type="text/javascript" src="assets/js/main.js")

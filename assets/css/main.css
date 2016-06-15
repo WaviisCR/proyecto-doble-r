@@ -73,6 +73,45 @@ button {
     .home .contacto-bckg .button {
       margin-top: 60vh; }
 
+nav img {
+  position: absolute;
+  right: 0px;
+  height: 5em; }
+
+.navbar-default {
+  background-color: #425760;
+  border-color: transparent; }
+  .navbar-default .navbar-brand {
+    color: #fed136;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
+      color: #fec503; }
+  .navbar-default .navbar-collapse {
+    border-color: rgba(255, 255, 255, 0.02); }
+  .navbar-default .navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: white; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: #fed136; }
+  .navbar-default .nav li a {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white; }
+    .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
+      color: #fed136;
+      outline: none; }
+  .navbar-default .navbar-nav > .active > a {
+    border-radius: 0;
+    color: white;
+    background-color: #fed136; }
+    .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+      color: white;
+      background-color: #fec503; }
+
 section #about #proyectos #blog #contacto {
   margin-bottom: 10%; }
 
@@ -87,8 +126,6 @@ section #about #proyectos #blog #contacto {
     font-size: 3em;
     margin: 6%; }
 
-#about img {
-  margin-bottom: 20%; }
 #about .text-box {
   width: 150%;
   padding: 2% 70% 2% 4%;
@@ -107,17 +144,44 @@ section #about #proyectos #blog #contacto {
   margin-top: 18%; }
 #about .bck {
   z-index: -1000; }
+#about .uno {
+  margin-top: 10%;
+  margin-left: -13%; }
+#about .dos {
+  margin-top: -10%;
+  margin-left: 13%; }
+#about .tres {
+  margin-top: 10%;
+  margin-left: -13%; }
 #about .equipo {
   margin-top: 5%; }
-  #about .equipo .subtitle-uno p {
-    font-size: 3.5em;
-    color: #777;
-    font-family: 'Fjalla One', sans-serif;
-    margin-bottom: 0px; }
+  #about .equipo .subtitle-uno {
+    margin-bottom: 4%;
+    margin-left: 16%; }
+    #about .equipo .subtitle-uno p {
+      font-size: 3.5em;
+      color: #777;
+      font-family: 'Fjalla One', sans-serif;
+      margin-bottom: 0px; }
   #about .equipo .box-equipo {
-    background: red; }
+    background-color: #37A9D1;
+    padding: 10% 20%;
+    color: white;
+    width: 95%; }
+    #about .equipo .box-equipo h3 {
+      color: white;
+      font-size: 2.2em;
+      margin-bottom: 12%; }
+    #about .equipo .box-equipo p {
+      font-size: 1.2em; }
+    #about .equipo .box-equipo .blockquote-left {
+      text-align: left; }
+    #about .equipo .box-equipo .blockquote-right {
+      text-align: right; }
     #about .equipo .box-equipo .content {
       display: inline; }
+    #about .equipo .box-equipo small {
+      font-style: italic; }
 
 #contacto
 .bckg-contact {
